@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cute Moon Message</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #db6ac5;
+      display: flex;
+      flex-direction: column; /* stack moon & text vertically */
+      justify-content: center; /* align to top */
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      padding-top: 50px; /* push moon down a bit */
+    }
+
+    .moon {
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle at 30% 30%, #e2d8d8, #ccc);
+      border-radius: 50%;
+      box-shadow: 0 0 60px #fff;
+      animation: float 4s ease-in-out infinite;
+      margin-bottom: 30px; /* space between moon & text */
+      transform: translateY(-50px); /* move moon up only */
+    }
+
+    .moon-text {
+      color: #84318e;
+      font-family: 'Nanum Pen Script', cursive;
+      font-size: 40px;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ffeb3b;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(-50px) translateY(0); }
+      50% { transform: translateY(-50px) translateY(-20px); }
+      100% { transform: translateY(-50px) translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="moon"></div>
+  <div class="moon-text">HI MUSHFIQ!! where do you want my bday treat ?!</div>
+</body>
+</html>
+
